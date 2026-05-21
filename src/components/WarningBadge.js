@@ -63,10 +63,10 @@ class WarningBadge extends HTMLElement {
           opacity: 0;
           margin-top: 0;
           padding: 0 10px;
-          background: rgba(200, 180, 0, 0.08);
-          border: 1px solid #8a7800;
+          background: rgb(200, 180, 0);
+          border: 1px solid black;
           border-radius: 4px;
-          color: #c8b400;
+          color: black;
           font-family: monospace;
           font-size: 12px;
           line-height: 50px;

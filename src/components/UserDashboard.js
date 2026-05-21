@@ -14,8 +14,8 @@ class UserDashboard extends HTMLElement {
         :host { display: block; }
 
         .dashboard {
-          background: #0d1117;
-          border: 1px solid #21262d;
+          background: salmon;
+          border: 1px solid black;
           border-radius: 14px;
           padding: 1.25rem;
           display: flex;
@@ -32,7 +32,7 @@ class UserDashboard extends HTMLElement {
         .etiqueta {
           font-family: monospace;
           font-size: 10px;
-          color: #30363d;
+          color: black;
           text-transform: uppercase;
           letter-spacing: 0.1em;
           margin: 0 0 5px 0;

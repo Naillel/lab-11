@@ -35,7 +35,7 @@ class WeatherTime extends HTMLElement {
           .loading { display: flex; gap: 6px; padding: 12px 0; align-items: center; }
           .dot {
             width: 8px; height: 8px; border-radius: 50%;
-            background: #30363d;
+            background: green;
             animation: bounce 1s infinite alternate;
           }
           .dot:nth-child(2) { animation-delay: 0.2s; }
@@ -55,10 +55,10 @@ class WeatherTime extends HTMLElement {
     }
 
     // Elige ícono según descripción
-    const icono = desc.toLowerCase().includes("sun")   ? "☀️"
-                : desc.toLowerCase().includes("cloud") ? "⛅"
-                : desc.toLowerCase().includes("rain")  ? "🌧️"
-                : "🌤️";
+    const icono = desc.toLowerCase().includes("sun")   ? ""
+                : desc.toLowerCase().includes("cloud") ? ""
+                : desc.toLowerCase().includes("rain")  ? ""
+                : "";
 
     this.shadowRoot.innerHTML = /* html */`
       <style>
@@ -67,7 +67,7 @@ class WeatherTime extends HTMLElement {
           display: flex;
           align-items: center;
           gap: 12px;
-          background: #161b22;
+          background: #40826D;
           border: 1px solid #30363d;
           border-radius: 10px;
           padding: 12px 16px;
@@ -77,7 +77,7 @@ class WeatherTime extends HTMLElement {
           margin: 0;
           font-family: sans-serif;
           font-size: 11px;
-          color: #8b949e;
+          color: white;
           text-transform: uppercase;
           letter-spacing: 0.06em;
         }
@@ -92,7 +92,7 @@ class WeatherTime extends HTMLElement {
           margin: 0;
           font-family: sans-serif;
           font-size: 11px;
-          color: #8b949e;
+          color: white;
         }
       </style>
 

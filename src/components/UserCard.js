@@ -10,13 +10,13 @@ class UserCard extends HTMLElement {
     this.avatar = this.getAttribute("avatar") ?? "👤";
     this.render();
 
-    // Evento: click en el botón → dispara CustomEvent hacia warning-badge
+    
     this.shadowRoot.querySelector(".btn").addEventListener("click", () => {
       const evento = new CustomEvent("usercard:saludar", {
-        bubbles: true,   // burbujea por el DOM
-        composed: true,  // atraviesa el Shadow DOM
+        bubbles: true,   
+        composed: true,  
         detail: {
-          mensaje: `👋 Hola! Soy ${this.name} — ${this.role}`
+          mensaje: ` Hola! Soy ${this.name} — ${this.role}`
         }
       });
       this.dispatchEvent(evento);
@@ -32,8 +32,8 @@ class UserCard extends HTMLElement {
           display: flex;
           align-items: center;
           gap: 12px;
-          background: #161b22;
-          border: 1px solid #30363d;
+          background: #B2FFFF;
+          border: 1px solid black;
           border-radius: 10px;
           padding: 12px 16px;
         }
@@ -42,8 +42,8 @@ class UserCard extends HTMLElement {
           width: 48px;
           height: 48px;
           border-radius: 50%;
-          background: #21262d;
-          border: 1px solid #30363d;
+          background: #B2FFFF;
+          border: 1px solid black;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -58,20 +58,20 @@ class UserCard extends HTMLElement {
           font-family: sans-serif;
           font-size: 14px;
           font-weight: 600;
-          color: #e6edf3;
+          color: black;
         }
 
         .role {
           margin: 0;
           font-family: sans-serif;
           font-size: 12px;
-          color: #58a6ff;
+          color: black;
         }
 
         .btn {
           background: transparent;
-          border: 1px solid #30363d;
-          color: #8b949e;
+          border: 1px solid black;
+          color: black;
           font-family: sans-serif;
           font-size: 12px;
           padding: 5px 14px;
@@ -81,8 +81,8 @@ class UserCard extends HTMLElement {
         }
 
         .btn:hover {
-          border-color: #58a6ff;
-          color: #58a6ff;
+          border-color: #black;
+          color: black;
         }
       </style>
 
